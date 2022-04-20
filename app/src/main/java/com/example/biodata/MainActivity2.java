@@ -16,8 +16,9 @@ import java.util.List;
 public class MainActivity2 extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-//    TextView name_a, surname_a, mobile_a, email_a, birthdata_a, address_a, city_a, country_a, Qualification_a, socicl_a;
-    TextView name_t, surname_t,hobby_a, mobile_t, email_t, birthdata_t, address_t, city_t, country_t, Qualification_t, socicl_t;
+
+    //    TextView name_a, surname_a, mobile_a, email_a, birthdata_a, address_a, city_a, country_a, Qualification_a, socicl_a;
+    TextView name_t, surname_t, hobby_a, mobile_t, email_t, birthdata_t, address_t, city_t, country_t, Qualification_t, socicl_t;
     Button bake_t, call;
 
     @Override
@@ -64,17 +65,7 @@ public class MainActivity2 extends AppCompatActivity {
         String Qualification = getIntent().getStringExtra("Qualification");
         String socicl = getIntent().getStringExtra("socicl");
 
-        bake_t.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent intent = new Intent(Intent.ACTION_CALL);
-                intent.setData(Uri.parse("tel:" + mobile_t.getText().toString()));
-                Log.e(TAG, "onclick: call");
-                startActivity(intent);
-
-            }
-        });
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,19 +76,28 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        bake_t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 //        private void Bidinge ()
 
-            name_t.setText("" + name);
-            surname_t.setText("" + surname );
-            hobby_a.setText(""+hobby);
-            mobile_t.setText("" + mobile);
-            email_t.setText("" + email);
-            birthdata_t.setText("" + birthdata);
-            address_t.setText("" + address);
-            city_t.setText("" + city);
-            country_t.setText("" + country);
-            Qualification_t.setText("" + Qualification);
-            socicl_t.setText("" + socicl);
+        name_t.setText("" + name);
+        surname_t.setText("" + surname);
+        hobby_a.setText("" + hobby);
+        mobile_t.setText("" + mobile);
+        email_t.setText("" + email);
+        birthdata_t.setText("" + birthdata);
+        address_t.setText("" + address);
+        city_t.setText("" + city);
+        country_t.setText("" + country);
+        Qualification_t.setText("" + Qualification);
+        socicl_t.setText("" + socicl);
+
 
     }
 }

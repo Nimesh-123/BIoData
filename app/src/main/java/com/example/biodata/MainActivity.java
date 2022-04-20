@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button submit, reset;
     CheckBox coding, circket, haking;
     RadioButton male, female, other;
+    RadioGroup gender;
 
 
     @Override
@@ -49,9 +50,7 @@ public class MainActivity extends AppCompatActivity {
         coding = findViewById(R.id.coding);
         circket = findViewById(R.id.circket);
         haking = findViewById(R.id.hacking);
-        male = findViewById(R.id.male);
-        female = findViewById(R.id.female);
-        other = findViewById(R.id.other);
+
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Qualification", q);
                 intent.putExtra("socicl", s1);
                 intent.putExtra("hobby", hobby);
-//                intent.putExtra("");
                 intent.putExtra("circket", t);
                 intent.putExtra("coding", o);
                 intent.putExtra("haking", h);

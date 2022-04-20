@@ -209,48 +209,6 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/black"
-                android:text="Gender"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:id="@+id/gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checkedButton="@id/male"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/male"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:text="male" />
-
-                <RadioButton
-                    android:id="@+id/female"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="female" />
-
-                <RadioButton
-                    android:id="@+id/other"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="other" />
-
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/black"
                 android:text="Address "
                 android:textSize="20dp"
                 android:textStyle="bold" />
